@@ -100,6 +100,9 @@ jobs:
               print('Originalarchiv zu GitHub-Pages/PWA aufgebaut, Version:',version)
           print('Website-Dateien:',len([p for p in out.rglob('*') if p.is_file()]))
           PYBUILD
+      - name: Qualitätsupdate für Issues 3, 4 und 5
+        run: python3 quality-update.py
+
       - name: JavaScript prÃ¼fen
         shell: bash
         run: |
