@@ -81,4 +81,553 @@ DATA = r"""
 54|Welche Filmkomödie zeigt Geisterjäger und ein riesiges Marshmallow-Maskottchen?|In welchem Jahr kam der erste „Ghostbusters“-Film in die Kinos?|„Beetlejuice“~„Die Geister, die ich rief …“~„Die Gespenster von Flatterfels“|Aus welchem Material besteht das riesige Stay-Puft-Maskottchen in „Ghostbusters“?|Marshmallow|Zuckerwatte~Kaugummi~Schokolade
 55|In welchem Film reist Marty McFly mit einem DeLorean in die Vergangenheit?|In welchem Jahr kam der erste Film „Zurück in die Zukunft“ in die Kinos?|„Bill & Teds verrückte Reise durch die Zeit“~„Die Reise in die Zeit“~„Time Bandits“|Welches Auto dient in „Zurück in die Zukunft“ als Zeitmaschine?|DeLorean DMC-12|Pontiac Firebird~Chevrolet Corvette~Porsche 928
 56|Welche Sitcom zeigt den Außerirdischen Gordon Shumway bei Familie Tanner?|In welchem Jahr startete „ALF“ erstmals im US-Fernsehen?|„Mork vom Ork“~„Mein Onkel vom Mars“~„Small Wonder“|Wie heißt ALF mit seinem ursprünglichen Namen?|Gordon Shumway|Mork~Uncle Martin~Roger Smith
-57|Welcher Tanzfilm vereinte Patrick Swayze u
+57|Welcher Tanzfilm vereinte Patrick Swayze und Jennifer Grey?|In welchem Jahr kam „Dirty Dancing“ erstmals in die Kinos?|„Footloose“~„Flashdance“~„Fame“|Wer spielt Johnny Castle in „Dirty Dancing“?|Patrick Swayze|Kevin Bacon~John Travolta~Rob Lowe
+58|Welcher Film zeigt Dustin Hoffman und Tom Cruise als Brüder auf einer Reise durch die USA?|In welchem Jahr kam „Rain Man“ erstmals in die US-Kinos?|„Die Farbe des Geldes“~„Die Glücksritter“~„Das Geheimnis meines Erfolges“|Welches Schauspielerpaar spielt die Brüder in „Rain Man“?|Dustin Hoffman und Tom Cruise|Paul Newman und Tom Cruise~Robert De Niro und Sean Penn~Al Pacino und Chris O’Donnell
+59|Welcher Film setzt Marty McFlys Zeitreisen mit einem Besuch im Jahr 2015 fort?|In welchem Jahr kam „Zurück in die Zukunft II“ erstmals in die Kinos?|„Zurück in die Zukunft III“~„Bill & Teds verrückte Reise in die Zukunft“~„Timecop“|In welches Zukunftsjahr reisen Marty und Doc in „Zurück in die Zukunft II“?|2015|2005~2020~2025
+60|Welches Zahlenlegespiel gewann 1980 die Auszeichnung „Spiel des Jahres“?|In welchem Jahr wurde Rummikub zum „Spiel des Jahres“ gewählt?|Hase und Igel~Scotland Yard~Dampfross|Was ist auf den üblichen Rummikub-Spielsteinen hauptsächlich abgebildet?|Zahlen|Buchstaben~Länderkarten~Tierbilder
+61|Welcher Commodore-Heimcomputer von 1982 wurde als „Brotkasten“ bekannt?|In welchem Jahr wurde der Commodore 64 vorgestellt?|Commodore VIC-20~Commodore 16~Commodore Plus/4|Wie viel Arbeitsspeicher besitzt ein ursprünglicher Commodore 64?|64 KB|16 KB~32 KB~128 KB
+62|Welcher Sinclair-Heimcomputer erschien 1982 mit 16 oder 48 KB RAM und Farbgrafik?|In welchem Jahr wurde der ursprüngliche ZX Spectrum vorgestellt?|Sinclair ZX80~Sinclair ZX81~Sinclair QL|Mit welchen RAM-Größen wurde der ursprüngliche ZX Spectrum angeboten?|16 und 48 KB|16 und 64 KB~32 und 64 KB~48 und 128 KB
+63|Bei welchem Brettspiel jagt ein Detektivteam Mister X durch London?|In welchem Jahr wurde Scotland Yard zum „Spiel des Jahres“ gewählt?|Cluedo~Die Scotland-Yard-Kriminalakte~Das verrückte Labyrinth|In welcher Stadt spielt das ursprüngliche Brettspiel Scotland Yard?|London|Paris~Berlin~Wien
+64|Welcher Apple-Computer wurde 1984 mit grafischer Oberfläche und Maus eingeführt?|In welchem Jahr wurde der ursprüngliche Apple Macintosh vorgestellt?|Apple Lisa~Apple II~Apple III|Welche Firma entwickelte den Macintosh?|Apple|Commodore~Atari~Sinclair
+65|Welche nichtflüchtige Speichertechnik entwickelte Fujio Masuoka bei Toshiba?|In welchem Jahr stellte Fujio Masuoka seine Flash-Speichertechnik auf der IEDM öffentlich vor?|DRAM~SRAM~Magnetblasenspeicher|Wer entwickelte bei Toshiba die Flash-Speichertechnik?|Fujio Masuoka|Federico Faggin~Ted Hoff~Jack Kilby
+66|Wie hieß Sonys kompakter tragbarer CD-Spieler aus dem Jahr 1984?|In welchem Jahr kam der Sony Discman D-50 auf den Markt?|Sony Walkman TPS-L2~Sony MZ-1~Sony WM-D6|Welches Medium spielt der Sony D-50 ab?|Audio-CD|Kompaktkassette~MiniDisc~DAT-Kassette
+67|Welches erste Amiga-Modell stellte Commodore 1985 vor?|In welchem Jahr wurde der Commodore Amiga 1000 vorgestellt?|Commodore Amiga 500~Commodore Amiga 2000~Commodore Amiga 3000|Welcher Hersteller brachte den Amiga 1000 auf den Markt?|Commodore|Atari~Apple~Acorn
+68|Welche Walkman-Neuerung führte Sony 1988 mit dem Modell WM-505 ein?|In welchem Jahr brachte Sony den Walkman WM-505 mit drahtlosen Kopfhörern heraus?|Walkman mit MiniDisc-Aufnahme~Walkman mit DAB-Empfänger~Walkman mit MP3-Wiedergabe|Welches Walkman-Modell verband Sony 1988 mit drahtlosen Kopfhörern?|WM-505|TPS-L2~WM-DD~WM-D6
+69|Welche tragbare Nintendo-Konsole von 1989 wurde unter anderem mit Tetris besonders erfolgreich?|In welchem Jahr erschien der ursprüngliche Nintendo Game Boy erstmals in Japan?|Atari Lynx~Sega Game Gear~NEC PC Engine GT|Welches Unternehmen entwickelte den ursprünglichen Game Boy?|Nintendo|Sega~Atari~NEC
+70|Wer wurde 1982 durch ein konstruktives Misstrauensvotum Bundeskanzler?|In welchem Jahr löste Helmut Kohl Helmut Schmidt als Bundeskanzler ab?|Hans-Dietrich Genscher wird Bundeskanzler~Franz Josef Strauß wird Bundeskanzler~Richard von Weizsäcker wird Bundeskanzler|Durch welches parlamentarische Verfahren wurde Helmut Kohl 1982 Bundeskanzler?|Konstruktives Misstrauensvotum|Direktwahl durch die Bevölkerung~Vertrauensfrage des Bundespräsidenten~Neuwahl des Bundesrates
+71|Welche Mannschaft gewann das Fußball-WM-Finale 1982 gegen die BRD?|In welchem Jahr gewann Italien das Fußball-WM-Finale in Madrid gegen die BRD?|Argentinien wird Fußballweltmeister~Brasilien wird Fußballweltmeister~Frankreich wird Fußballweltmeister|Wie endete das Fußball-WM-Finale 1982 aus italienischer Sicht?|3:1|2:1~2:0~3:2
+72|Wie heißt der Krieg von 1982 zwischen Großbritannien und Argentinien um eine Inselgruppe?|In welchem Jahr fand der Falklandkrieg statt?|Suezkrieg~Golfkrieg~Beagle-Konflikt|Welche Staaten kämpften im Falklandkrieg gegeneinander?|Großbritannien und Argentinien|Großbritannien und Chile~Spanien und Argentinien~Großbritannien und Uruguay
+73|Welche Reaktorkatastrophe führte 1986 auch in der Bundesrepublik zu erhöhter Strahlenbelastung?|In welchem Jahr ereignete sich die Reaktorkatastrophe von Tschernobyl?|Reaktorunfall von Three Mile Island~Reaktorunfall von Windscale~Reaktorkatastrophe von Fukushima|In welchem heutigen Staat liegt das Kernkraftwerk Tschernobyl?|Ukraine|Belarus~Russland~Litauen
+74|Welche US-Raumfähre zerbrach 1986 kurz nach dem Start?|In welchem Jahr ereignete sich das Challenger-Unglück?|Columbia-Unglück~Apollo-1-Unglück~Sojus-11-Unglück|Wie viele Besatzungsmitglieder starben beim Challenger-Unglück?|Sieben|Fünf~Sechs~Acht
+75|Welches neue Bundesressort übernahm Walter Wallmann 1986 als erster Minister?|In welchem Jahr wurde das Bundesumweltministerium gegründet?|Gründung des Bundesforschungsministeriums~Gründung des Bundesgesundheitsministeriums~Gründung des Bundesentwicklungsministeriums|Wer war der erste Bundesumweltminister?|Walter Wallmann|Klaus Töpfer~Jürgen Trittin~Norbert Röttgen
+76|Welche Mannschaft gewann das Fußball-WM-Finale 1986 gegen die BRD?|In welchem Jahr gewann Argentinien das Fußball-WM-Finale gegen die BRD?|Italien wird Fußballweltmeister~Brasilien wird Fußballweltmeister~Frankreich wird Fußballweltmeister|Wie endete das Fußball-WM-Finale 1986 aus argentinischer Sicht?|3:2|2:1~3:1~2:0
+77|Welche Leistung gelang Steffi Graf 1988 mit vier Grand-Slam-Titeln und Olympiagold?|In welchem Jahr gelang Steffi Graf ihr Golden Slam?|Steffi Grafs Karriere-Grand-Slam~Steffi Grafs Grand-Slam-Doppel~Steffi Grafs Saison ohne Niederlage|Welche Kombination bezeichnet Steffi Grafs Golden Slam von 1988?|Vier Grand-Slam-Einzeltitel und Olympiagold im selben Jahr|Drei Grand-Slam-Einzeltitel und Olympiagold im selben Jahr~Vier Grand-Slam-Einzeltitel und der Fed-Cup-Sieg im selben Jahr~Vier Grand-Slam-Doppeltitel und Olympiagold im selben Jahr
+78|Welche regelmäßigen Proteste begannen im September 1989 nach Friedensgebeten in Leipzig?|In welchem Jahr begannen die Leipziger Montagsdemonstrationen?|Beginn der Berliner Freitagsdemonstrationen~Beginn der Dresdner Dienstagsdemonstrationen~Beginn der Hallenser Samstagsdemonstrationen|In welcher Stadt begannen die bekannten Montagsdemonstrationen im September 1989?|Leipzig|Dresden~Berlin~Halle
+79|Welches Ereignis folgte am 9. November 1989 auf Günter Schabowskis Pressekonferenz?|In welchem Jahr wurde die Berliner Mauer geöffnet?|Deutsche Wiedervereinigung~Unterzeichnung des Zwei-plus-Vier-Vertrags~Währungsunion von BRD und DDR|An welchem Datum wurde die Berliner Mauer geöffnet?|9. November 1989|3. Oktober 1989~17. Juni 1989~13. August 1989
+"""
+
+# Enger gefasste Alternativen für einzelne Fragen:
+# Diese überschreiben die entsprechende DATA-Zeile gezielt.
+EASY_OVERRIDES = {
+    49: [
+        "„Crazy for You“ – David Hasselhoff",
+        "„Is Everybody Happy“ – David Hasselhoff",
+        "„Flying on the Wings of Tenderness“ – David Hasselhoff",
+    ],
+    54: [
+        "„Beetlejuice“",
+        "„Die Geister, die ich rief …“",
+        "„High Spirits“",
+    ],
+    63: [
+        "Cluedo",
+        "Heimlich & Co.",
+        "Inkognito",
+    ],
+    68: [
+        "Walkman mit integriertem Lautsprecher",
+        "Walkman mit digitaler Kassettenaufzeichnung",
+        "Walkman mit automatischem Kassettenwechsel",
+    ],
+    78: [
+        "Beginn der Leipziger Freitagsdemonstrationen",
+        "Beginn der Leipziger Dienstagsdemonstrationen",
+        "Beginn der Leipziger Samstagsdemonstrationen",
+    ],
+}
+
+SOURCES = {
+    14: "https://www.fernsehserien.de/ein-herz-und-eine-seele",
+    22: "https://www.bundestag.de/resource/blob/196082/Kapitel_01_03_Wahlalter.pdf",
+    65: "https://www.shmj.or.jp/shimura/shimura_E/ssis_shimura2_33E.html",
+}
+
+YEAR_OVERRIDES = {
+    14: "1973",
+    22: "1975",
+}
+
+EXPLANATION_OVERRIDES = {
+    14: (
+        "„Ein Herz und eine Seele“ startete am 15. Januar 1973 im WDR. "
+        "Im Mittelpunkt steht die Familie Tetzlaff mit „Ekel Alfred“."
+    ),
+    22: (
+        "Die Volljährigkeitsgrenze sank von 21 auf 18 Jahre. "
+        "Das Gesetz stammt aus dem Jahr 1974 und trat am 1. Januar 1975 in Kraft."
+    ),
+    65: (
+        "Fujio Masuoka entwickelte Flash-Speicher bei Toshiba bereits um 1980. "
+        "Die öffentliche Vorstellung auf der IEDM erfolgte 1984. "
+        "Entwicklung und Vorstellung sind unterschiedliche Ereignisse."
+    ),
+    74: (
+        "Die Raumfähre Challenger zerbrach am 28. Januar 1986 kurz nach dem Start. "
+        "Alle sieben Besatzungsmitglieder kamen ums Leben."
+    ),
+}
+
+ROUND_CORE = r"""
+/* QUALITY-3-4-5: Auswahl immer erst filtern, dann Sachverhalte gruppieren. */
+(() => {
+  'use strict';
+
+  function filter(questions, options) {
+    return questions.filter(q =>
+      (options.decade === 'beide' || q.decade === options.decade) &&
+      options.categories.includes(q.category) &&
+      (options.difficulty === 'alle' || q.difficulty === options.difficulty)
+    );
+  }
+
+  function groups(pool) {
+    const map = new Map();
+    for (const q of pool) {
+      if (!q.factId || typeof q.factId !== 'string') {
+        throw new Error('Frage ohne gültige factId: ' + q.id);
+      }
+      if (!map.has(q.factId)) map.set(q.factId, []);
+      map.get(q.factId).push(q);
+    }
+    return [...map.values()];
+  }
+
+  function select(pool, count, random = Math.random) {
+    const wanted = Math.max(0, Math.floor(Number(count) || 0));
+    const candidates = groups(pool).map(
+      variants => variants[Math.floor(random() * variants.length)]
+    );
+
+    for (let i = candidates.length - 1; i > 0; i--) {
+      const j = Math.floor(random() * (i + 1));
+      [candidates[i], candidates[j]] = [candidates[j], candidates[i]];
+    }
+
+    return candidates.slice(0, wanted);
+  }
+
+  window.QuizRounds = Object.freeze({
+    filter,
+    select,
+    count: pool => groups(pool).length
+  });
+})();
+"""
+
+TEST_JS = r"""
+const assert = require('node:assert/strict');
+const fs = require('node:fs');
+const questions = JSON.parse(fs.readFileSync(0, 'utf8'));
+const R = window.QuizRounds;
+const categories = [...new Set(questions.map(q => q.category))];
+let checks = 0;
+
+assert.equal(questions.length, 240);
+assert.equal(new Set(questions.map(q => q.id)).size, 240);
+assert.equal(R.count(questions), 80);
+
+for (const q of questions) {
+  assert.equal(q.answers.length, 4);
+  const normalized = q.answers.map(
+    a => a.normalize('NFC').trim().toLocaleLowerCase('de')
+  );
+  assert.equal(new Set(normalized).size, 4, 'Doppelte Option: ' + q.id);
+  assert.equal(q.answers.filter(a => a === q.correct).length, 1);
+  assert.ok(!/Was ist gemeint|zu dieser Zeitreise/i.test(q.question));
+  assert.ok(/^https:\/\//.test(q.source));
+  assert.ok(q.factId);
+}
+
+for (const factId of new Set(questions.map(q => q.factId))) {
+  const variants = questions.filter(q => q.factId === factId);
+  assert.equal(variants.length, 3);
+  assert.equal(new Set(variants.map(q => q.difficulty)).size, 3);
+  assert.equal(new Set(variants.map(q => q.category)).size, 1);
+  assert.equal(new Set(variants.map(q => q.decade)).size, 1);
+}
+
+const before = JSON.stringify(questions);
+let seed = 123456789;
+const random = () => {
+  seed = (Math.imul(seed, 1664525) + 1013904223) >>> 0;
+  return seed / 4294967296;
+};
+
+for (const decade of ['70er', '80er', 'beide']) {
+  for (let mask = 1; mask < (1 << categories.length); mask++) {
+    const chosen = categories.filter((_, i) => mask & (1 << i));
+
+    for (const difficulty of ['alle', 'leicht', 'mittel', 'schwer']) {
+      const options = {decade, categories: chosen, difficulty};
+      const pool = R.filter(questions, options);
+
+      for (const q of pool) {
+        assert.ok(decade === 'beide' || q.decade === decade);
+        assert.ok(chosen.includes(q.category));
+        assert.ok(difficulty === 'alle' || q.difficulty === difficulty);
+      }
+
+      for (const count of [10, 20, 30, 40]) {
+        for (let repeat = 0; repeat < 10; repeat++) {
+          const round = R.select(pool, count, random);
+          assert.equal(round.length, Math.min(count, R.count(pool)));
+          assert.equal(new Set(round.map(q => q.factId)).size, round.length);
+          assert.ok(round.every(q => pool.includes(q)));
+          checks++;
+        }
+      }
+    }
+  }
+}
+
+assert.deepEqual(R.select([], 20), []);
+assert.deepEqual(
+  R.filter(questions, {decade: 'beide', categories: [], difficulty: 'alle'}),
+  []
+);
+assert.equal(R.select(questions, 0).length, 0);
+assert.equal(JSON.stringify(questions), before, 'Auswahl verändert Daten');
+
+for (const index of [42, 65, 69]) {
+  const factId = questions[index * 3].factId;
+  const variants = questions.filter(q => q.factId === factId);
+  assert.equal(R.select(variants, 40, random).length, 1);
+}
+
+console.log(
+  `OK: ${questions.length} Varianten, ${R.count(questions)} Sachverhalte, ` +
+  `${checks} geprüfte Auswahlrunden ohne doppelte factId.`
+);
+"""
+
+
+def fail(message):
+    raise SystemExit(message)
+
+
+def replace_once(text, old, new, label):
+    if text.count(old) != 1:
+        fail(
+            f"Patch abgebrochen: Erwartete Stelle für {label!r} "
+            "nicht eindeutig gefunden. Keine geänderte Website veröffentlicht."
+        )
+    return text.replace(old, new, 1)
+
+
+def repair_known_encoding(text):
+    # Nur bekannte fehlerhaft doppelt interpretierte Zeichen korrigieren.
+    replacements = {
+        "â†’": "→",
+        "â€¦": "…",
+        "â€“": "–",
+        "â€”": "—",
+        "â€ž": "„",
+        "â€œ": "“",
+        "â€™": "’",
+        "Ã¶": "ö",
+        "Ã¼": "ü",
+        "Ã¤": "ä",
+        "Ã–": "Ö",
+        "Ãœ": "Ü",
+        "Ã„": "Ä",
+        "ÃŸ": "ß",
+        "Â·": "·",
+        "Â ": " ",
+    }
+    for bad, good in replacements.items():
+        text = text.replace(bad, good)
+    return text
+
+
+def parse_data():
+    result = {}
+    for line_number, line in enumerate(DATA.strip().splitlines(), 1):
+        fields = [part.strip() for part in line.split("|")]
+        if len(fields) != 7:
+            fail(f"Ungültige redaktionelle Daten in Zeile {line_number}")
+        index = int(fields[0])
+        if index in result:
+            fail(f"Doppelter Sachverhaltsindex: {index}")
+        result[index] = fields[1:]
+
+    if set(result) != set(range(80)):
+        fail("Die redaktionellen Daten müssen alle 80 Sachverhalte abdecken.")
+    return result
+
+
+def year_choices(year):
+    year = int(year)
+    decade_start = (year // 10) * 10
+    candidates = [
+        n for n in range(decade_start, decade_start + 10)
+        if n != year
+    ]
+    # Nahegelegene Jahreszahlen, ohne Duplikate oder Jahrzehntwechsel.
+    candidates.sort(key=lambda n: (abs(n - year), n))
+    return [str(year)] + [str(n) for n in candidates[:3]]
+
+
+def main():
+    needed = [
+        "questions.js", "app.js", "index.html",
+        "pwa.js", "sw.js", "cache-version.js"
+    ]
+    if not all((SITE / name).is_file() for name in needed):
+        fail(
+            "_site/ ist unvollständig. Diesen Schritt nach "
+            "„Website vorbereiten“ einfügen."
+        )
+
+    app = (SITE / "app.js").read_text(encoding="utf-8")
+    if "QUALITY-3-4-5" in app:
+        fail("Qualitätsupdate ist bereits enthalten. Keine erneute Anwendung.")
+
+    source = (SITE / "questions.js").read_text(encoding="utf-8")
+    marker = "window.QUIZ_QUESTIONS"
+    if marker not in source:
+        fail("Fragenvariable nicht gefunden.")
+    payload = source.split(marker, 1)[1].split("=", 1)[1].lstrip()
+    original, _ = json.JSONDecoder().raw_decode(payload)
+
+    if len(original) != 240:
+        fail("Dieser Patch erwartet das Original mit 240 Fragevarianten.")
+
+    editorial = parse_data()
+    updated = []
+
+    for index in range(80):
+        base, dated, extra = original[index * 3:index * 3 + 3]
+        if (
+            base["difficulty"] != "leicht"
+            or dated["difficulty"] != "mittel"
+            or extra["difficulty"] != "schwer"
+            or len({q["category"] for q in [base, dated, extra]}) != 1
+            or len({q["decade"] for q in [base, dated, extra]}) != 1
+        ):
+            fail(f"Unerwartete Originalstruktur bei Sachverhalt {index}")
+
+        (
+            direct_question,
+            year_question,
+            direct_wrong,
+            extra_question,
+            extra_correct,
+            extra_wrong,
+        ) = editorial[index]
+
+        direct_wrong = EASY_OVERRIDES.get(index, direct_wrong.split("~"))
+        extra_wrong = extra_wrong.split("~")
+        if len(direct_wrong) != 3 or len(extra_wrong) != 3:
+            fail(f"Drei falsche Alternativen erwartet: Sachverhalt {index}")
+
+        fact_id = f"fact-{base['id']:03d}"
+        year = YEAR_OVERRIDES.get(index, dated["correct"])
+        explanation = EXPLANATION_OVERRIDES.get(index, base["explanation"])
+        source_url = SOURCES.get(index, base["source"])
+
+        definitions = [
+            (
+                base,
+                direct_question,
+                base["correct"],
+                [base["correct"]] + direct_wrong,
+                explanation,
+            ),
+            (
+                dated,
+                year_question,
+                year,
+                year_choices(year),
+                f"Das gesuchte Jahr ist {year}. {explanation}",
+            ),
+            (
+                extra,
+                extra_question,
+                extra_correct,
+                [extra_correct] + extra_wrong,
+                f"{extra_correct}. {explanation}",
+            ),
+        ]
+
+        for old, question, correct, answers, detail in definitions:
+            q = dict(old)
+            q.update({
+                "factId": fact_id,
+                "question": question,
+                "correct": correct,
+                "answers": answers,
+                "explanation": detail,
+                "source": source_url,
+            })
+            updated.append(q)
+
+    # Prüfung vor dem Schreiben der Website.
+    subprocess.run(
+        ["node", "-e", "const window = {};\n" + ROUND_CORE + "\n" + TEST_JS],
+        input=json.dumps(updated, ensure_ascii=False),
+        text=True,
+        check=True,
+    )
+
+    app = replace_once(
+        app,
+        "const pool=getPool(); $('#availableNote').textContent="
+        "`${pool.length} passende Fragen verfügbar`;",
+        """const pool=getPool();
+    const unique=window.QuizRounds.count(pool);
+    const actual=Math.min(state.count,unique);
+    $('#availableNote').textContent=unique===0
+      ? 'Keine passenden Fragen für diese Auswahl.'
+      : `${unique} unterschiedliche Sachverhalte verfügbar (${pool.length} Fragevarianten).`
+        + (actual<state.count
+          ? ` Die Runde wird auf ${actual} Fragen verkürzt – ohne Wiederholungen.`
+          : ` Deine Runde enthält ${actual} Fragen ohne Wiederholungen.`);""",
+        "Verfügbarkeitsanzeige",
+    )
+
+    app = replace_once(
+        app,
+        "function getPool(){return Q.filter(q=>"
+        "(state.decade==='beide'||q.decade===state.decade)&&"
+        "state.categories.includes(q.category)&&"
+        "(state.difficulty==='alle'||q.difficulty===state.difficulty))}",
+        "function getPool(){return window.QuizRounds.filter(Q,state)}",
+        "Filter",
+    )
+
+    app = replace_once(
+        app,
+        "state.round=shuffle(pool).slice(0,Math.min(state.count,pool.length));",
+        """state.round=window.QuizRounds.select(pool,state.count);
+    if(state.round.length<state.count){
+      toast(`Runde auf ${state.round.length} unterschiedliche Fragen verkürzt`);
+    }""",
+        "Rundenauswahl",
+    )
+
+    app = app.replace(
+        "${Q.length} eigenständige Fragen · keine Anmeldung · Daten bleiben im Browser",
+        "${window.QuizRounds.count(Q)} Sachverhalte · ${Q.length} Fragevarianten"
+        " · keine Anmeldung · Daten bleiben im Browser",
+    )
+    app = ROUND_CORE + "\n" + repair_known_encoding(app)
+
+    html = repair_known_encoding(
+        (SITE / "index.html").read_text(encoding="utf-8")
+    )
+    html = html.replace(
+        "Zwei Jahrzehnte. 240 Fragen.",
+        "80 Sachverhalte. 240 Fragevarianten.",
+    )
+    html = html.replace(
+        "240 eigenständig formulierte Fragen",
+        "240 Fragevarianten zu 80 Sachverhalten",
+    )
+    html = html.replace(
+        "240 eigenständige Fragen",
+        "240 Fragevarianten zu 80 Sachverhalten",
+    )
+
+    pwa = repair_known_encoding(
+        (SITE / "pwa.js").read_text(encoding="utf-8")
+    )
+    pwa = replace_once(
+        pwa,
+        "function setStatus(text) { status.textContent = text; }",
+        "function setStatus(text) { "
+        "status.textContent = text + ' · Qualitätsupdate Q3–5'; }",
+        "sichtbare Update-Kennung",
+    )
+
+    manifest_path = SITE / "manifest.webmanifest"
+    manifest_text = None
+    if manifest_path.is_file():
+        manifest = json.loads(
+            repair_known_encoding(manifest_path.read_text(encoding="utf-8"))
+        )
+        manifest["description"] = (
+            "Das Quiz mit 80 Sachverhalten und 240 Fragevarianten "
+            "aus den 70ern und 80ern."
+        )
+        manifest_text = json.dumps(
+            manifest, ensure_ascii=False, indent=2
+        ) + "\n"
+
+    output = {
+        "questions.js": (
+            "// Redaktionell überarbeitet: Issues #3, #4 und #5.\n"
+            "window.QUIZ_QUESTIONS = "
+            + json.dumps(updated, ensure_ascii=False, indent=2)
+            + ";\n"
+        ),
+        "app.js": app,
+        "index.html": html,
+        "pwa.js": pwa,
+    }
+    if manifest_text is not None:
+        output["manifest.webmanifest"] = manifest_text
+
+    # Syntaxprüfung der JavaScript-Ausgaben vor dem Schreiben.
+    for filename in ["questions.js", "app.js", "pwa.js"]:
+        subprocess.run(
+            ["node", "--check"],
+            input=output[filename],
+            text=True,
+            check=True,
+        )
+
+    # Version aus dem zukünftigen Website-Inhalt berechnen.
+    digest = hashlib.sha256()
+    for path in sorted(SITE.rglob("*")):
+        if not path.is_file():
+            continue
+        relative = path.relative_to(SITE).as_posix()
+        if relative in {"sw.js", "cache-version.js"}:
+            continue
+        content = (
+            output[relative].encode("utf-8")
+            if relative in output
+            else path.read_bytes()
+        )
+        digest.update(relative.encode("utf-8"))
+        digest.update(b"\0")
+        digest.update(content)
+    version = digest.hexdigest()[:16]
+
+    sw = (SITE / "sw.js").read_text(encoding="utf-8")
+    sw, replacements = re.subn(
+        r"const VERSION = '[^']+';",
+        f"const VERSION = '{version}';",
+        sw,
+        count=1,
+    )
+    if replacements != 1:
+        fail("Cache-Version im Service Worker nicht gefunden.")
+
+    output["sw.js"] = sw
+    output["cache-version.js"] = (
+        "window.ZEITREISE_CACHE = 'zeitreise-' + "
+        "encodeURIComponent(new URL('./', document.baseURI).href)"
+        f" + '-{version}';\n"
+        f"window.ZEITREISE_RELEASE = '{RELEASE}';\n"
+    )
+
+    for filename in ["sw.js", "cache-version.js"]:
+        subprocess.run(
+            ["node", "--check"],
+            input=output[filename],
+            text=True,
+            check=True,
+        )
+
+    for filename, text in output.items():
+        (SITE / filename).write_text(text, encoding="utf-8")
+
+    print(
+        f"Qualitätsupdate angewendet: {len(updated)} Varianten, "
+        f"80 Sachverhalte, Cache {version}."
+    )
+
+
+if __name__ == "__main__":
+    main()
