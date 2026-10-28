@@ -1,6 +1,6 @@
 (() => {
   'use strict';
-  const APP_VERSION = '2026-10-28.3';
+  const APP_VERSION = '2026-10-28.4';
   const SEEN_KEY = 'zrVersion';
   const DISMISS_KEY = 'zrUpdateDismissed';
   const banner = document.getElementById('updateBanner');
