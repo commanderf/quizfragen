@@ -6,12 +6,7 @@
   <meta name="theme-color" content="#f4b942">
   <meta name="description" content="Zeitreise-Quiz durch die 70er bis 00er – ohne Anmeldung und ohne Tracking spielbar.">
   <title>Zeitreise – Das 70er bis 00er Quiz</title>
-    <link rel="stylesheet" href="./styles.css">
-  <link rel="manifest" href="./manifest.webmanifest">
-  <link rel="icon" href="./icons/icon.svg" type="image/svg+xml">
-  <link rel="apple-touch-icon" href="./icons/apple-touch-icon.png">
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-title" content="Zeitreise">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <div id="updateBanner" role="status" hidden><span>Neue Version verfügbar</span><button id="updateNowBtn" type="button">Update installieren</button><button id="updateLaterBtn" type="button" aria-label="Später">×</button></div>
@@ -24,7 +19,6 @@
     <button id="statsBtn" class="icon-btn" type="button" aria-label="Statistik öffnen">▥</button>
   </header>
 
-  <aside class="pwa-bar" aria-label="App und Offline-Status"><span id="offlineStatus" role="status">Offline-Speicher wird vorbereitet …</span><button id="installBtn" type="button">Als App installieren</button><button id="updateBtn" type="button" hidden>Update laden</button></aside>
   <main id="app" class="shell">
     <section id="homeView" class="view active">
       <div class="hero">
@@ -138,8 +132,6 @@
   <footer><span>Privat. Lokal. Ohne Tracking.</span><button id="aboutBtn" type="button">Über dieses Quiz</button></footer>
   <script src="questions.js"></script>
   <script src="app.js"></script>
-  <script src="./cache-version.js"></script>
-  <script src="./pwa.js"></script>
   <script src="update.js"></script>
 </body>
 </html>
