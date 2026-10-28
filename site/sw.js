@@ -1,11 +1,11 @@
 'use strict';
-const VERSION = '66ee32c9d8f1a8ee';
+const VERSION = '022051cb75040d8c';
 const PREFIX = 'zeitreise-' + encodeURIComponent(self.registration.scope) + '-';
 const CACHE = PREFIX + VERSION;
 const FILES = '["./", "./index.html", "./styles.css", "./app.js", "./questions.js", "./pwa.js", "./update.js", "./version.json", "./cache-version.js", "./manifest.webmanifest", "./icons/icon.svg", "./icons/icon-192.png", "./icons/icon-512.png", "./icons/apple-touch-icon.png"]';
 const URLS = new Set(FILES.map(path => new URL(path, self.registration.scope).href));
 self.addEventListener('install', event => {
-  event.waitUntil(caches.open(CACHE).then(cache => cache.addAll(FILES.map(path => new Request(new URL(path, self.registration.scope), {cache: 'reload'})))));
+  event.waitUntil(caches.open(CACHE).then(cache => cache.addAll(FILES.map(path => new Request(new URL(path, self.registration.scope), {cache: 'reload'}))).then(() => self.skipWaiting())));
 });
 self.addEventListener('activate', event => {
   event.waitUntil((async () => {

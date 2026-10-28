@@ -1,1 +1,1 @@
-window.ZEITREISE_CACHE = 'zeitreise-' + encodeURIComponent(new URL('./', document.baseURI).href) + '-66ee32c9d8f1a8ee';
+window.ZEITREISE_CACHE = 'zeitreise-' + encodeURIComponent(new URL('./', document.baseURI).href) + '-022051cb75040d8c';

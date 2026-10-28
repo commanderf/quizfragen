@@ -47,8 +47,15 @@
   addEventListener('online', () => networkStatus().catch(() => setStatus('Online')));
   addEventListener('offline', () => networkStatus().catch(() => setStatus('Offline')));
   function watchUpdate() {
+    if (registration.waiting) registration.waiting.postMessage({type: 'SKIP_WAITING'});
     if (registration.waiting && navigator.serviceWorker.controller) updateButton.hidden = false;
   }
+  let hadController = !!navigator.serviceWorker.controller;
+  navigator.serviceWorker.addEventListener('controllerchange', () => {
+    if (hadController) { location.reload(); return; }
+    hadController = true;
+    setStatus(navigator.onLine ? 'Offline bereit' : 'Offline · spielbereit');
+  });
   navigator.serviceWorker.register('./sw.js', {scope: './', updateViaCache: 'none'})
     .then(reg => {
       registration = reg; watchUpdate();
