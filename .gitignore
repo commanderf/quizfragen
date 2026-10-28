@@ -1,0 +1,9 @@
+# Build-/Working-Ausgaben
+_site/
+_site_test/
+*.tmp
+__pycache__/
+
+#Editors
+*~
+.DS_Store

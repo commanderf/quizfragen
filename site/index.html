@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#f4b942">
+  <meta name="description" content="Zeitreise-Quiz durch die 70er und 80er – lokal und ohne Tracking spielbar.">
+  <title>Zeitreise – Das 70er & 80er Quiz</title>
+    <link rel="stylesheet" href="./styles.css">
+  <link rel="manifest" href="./manifest.webmanifest">
+  <link rel="icon" href="./icons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="./icons/apple-touch-icon.png">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="Zeitreise">
+</head>
+<body>
+  <div id="updateBanner" role="status" hidden><span>Neue Version verfügbar</span><button id="updateNowBtn" type="button">Update installieren</button><button id="updateLaterBtn" type="button" aria-label="Später">×</button></div>
+  <div class="grain" aria-hidden="true"></div>
+  <header class="topbar">
+    <a class="brand" href="#" aria-label="Zur Startseite">
+      <span class="brand-mark">ZR</span>
+      <span><strong>ZEITREISE</strong><small>Das 70er - 00er Quiz</small></span>
+    </a>
+    <button id="statsBtn" class="icon-btn" type="button" aria-label="Statistik öffnen">▥</button>
+  </header>
+
+  <aside class="pwa-bar" aria-label="App und Offline-Status"><span id="offlineStatus" role="status">Offline-Speicher wird vorbereitet …</span><button id="installBtn" type="button">Als App installieren</button><button id="updateBtn" type="button" hidden>Update laden</button></aside>
+  <main id="app" class="shell">
+    <section id="homeView" class="view active">
+      <div class="hero">
+        <p class="eyebrow">Vier Jahrzehnte. Fragen aus den 70ern bis 00ern.</p>
+        <h1>Wie viel <em>damals</em><br>steckt noch in dir?</h1>
+        <p class="lead">Von Schlaghose bis Flipphone: Wähle dein Jahrzehnt oder alle zusammen und starte die Zeitreise.</p>
+      </div>
+
+      <div id="resumeBox" class="quick-play" hidden>
+        <div><span class="shuffle-icon">↻</span><div><h2>Unbeendete Runde</h2><p id="resumeInfo"></p></div></div>
+        <div style="display:flex;gap:10px;align-items:center"><button id="resumeBtn" class="pill-btn" type="button">Fortsetzen</button><button id="discardBtn" class="icon-btn" type="button" aria-label="Gespeicherte Runde verwerfen">×</button></div>
+      </div>
+
+      <div class="decade-grid" aria-label="Jahrzehnt auswählen">
+        <button class="decade-card seventies" data-decade="70er" type="button">
+          <span class="tape" aria-hidden="true"><i></i><i></i></span>
+          <span class="decade-number">70</span>
+          <span class="decade-title">DIE SIEBZIGER</span>
+          <span class="decade-copy">Disco, Ölkrise & orange Tapeten</span>
+          <span class="card-cta">Quiz starten <b>→</b></span>
+        </button>
+        <button class="decade-card eighties" data-decade="80er" type="button">
+          <span class="pixel-sun" aria-hidden="true"></span>
+          <span class="decade-number">80</span>
+          <span class="decade-title">DIE ACHTZIGER</span>
+          <span class="decade-copy">New Wave, Walkman & Mauerfall</span>
+          <span class="card-cta">Quiz starten <b>→</b></span>
+        </button>
+        <button class="decade-card nineties" data-decade="90er" type="button">
+          <span class="floppy" aria-hidden="true"><i class="shutter"></i></span>
+          <span class="decade-number">90</span>
+          <span class="decade-title">DIE NEUNZIGER</span>
+          <span class="decade-copy">Grunge, Eurodance & Internet</span>
+          <span class="card-cta">Quiz starten <b>→</b></span>
+        </button>
+        <button class="decade-card zeros" data-decade="00er" type="button">
+          <span class="y2k-orb" aria-hidden="true"></span>
+          <span class="decade-number">00</span>
+          <span class="decade-title">DIE NULLER</span>
+          <span class="decade-copy">Pop, Handyboom & Social Web</span>
+          <span class="card-cta">Quiz starten <b>→</b></span>
+        </button>
+      </div>
+
+      <section class="quick-play" aria-labelledby="quickTitle">
+        <div><span class="shuffle-icon">⤨</span><div><h2 id="quickTitle">Gemischte Zeitreise</h2><p>Beide Jahrzehnte, alle Kategorien</p></div></div>
+        <button id="mixedBtn" class="pill-btn" type="button">20 Fragen</button>
+      </section>
+
+      <section class="category-strip" aria-labelledby="catTitle">
+        <div class="section-head"><div><p class="eyebrow">Vier Themenwelten</p><h2 id="catTitle">Worüber weißt du Bescheid?</h2></div></div>
+        <div class="chips">
+          <span data-category="Musik">♫ Musik</span>
+          <span data-category="Film & Fernsehen">▻ Film & Fernsehen</span>
+          <span data-category="Alltag & Technik">⌁ Alltag & Technik</span>
+          <span data-category="Zeitgeschehen & Sport">◎ Zeitgeschehen & Sport</span>
+        </div>
+      </section>
+    </section>
+
+    <section id="setupView" class="view" aria-labelledby="setupTitle">
+      <button class="back-link" data-action="home" type="button">← Zurück</button>
+      <p class="eyebrow">Deine Runde</p>
+      <h1 id="setupTitle">Zeitmaschine einstellen</h1>
+      <div class="setup-panel">
+        <fieldset><legend>Jahrzehnt</legend><div id="decadeOptions" class="segmented"></div></fieldset>
+        <fieldset><legend>Kategorien</legend><div id="categoryOptions" class="check-grid"></div></fieldset>
+        <fieldset><legend>Anzahl der Fragen</legend><div id="countOptions" class="segmented compact"></div></fieldset>
+        <fieldset><legend>Schwierigkeit</legend><div id="difficultyOptions" class="segmented compact"></div></fieldset>
+        <button id="startBtn" class="primary-btn" type="button">Zeitreise starten <span>→</span></button>
+        <p id="availableNote" class="available-note"></p>
+      </div>
+    </section>
+
+    <section id="quizView" class="view" aria-live="polite">
+      <div class="quiz-top">
+        <button id="quitBtn" class="icon-btn dark" type="button" aria-label="Quiz beenden">×</button>
+        <div class="progress-wrap"><div class="progress-meta"><span id="progressText"></span><span id="scoreText"></span></div><div class="progress-track"><i id="progressBar"></i></div></div>
+      </div>
+      <article class="question-card">
+        <div class="question-meta"><span id="categoryBadge"></span><span id="difficultyBadge"></span></div>
+        <h2 id="questionText"></h2>
+        <div id="answers" class="answers"></div>
+        <div id="feedback" class="feedback" hidden>
+          <div><strong id="feedbackTitle"></strong><p id="explanation"></p><a id="sourceLink" target="_blank" rel="noopener noreferrer">Faktenquelle ↗</a></div>
+          <button id="nextBtn" class="primary-btn small" type="button">Weiter <span>→</span></button>
+        </div>
+      </article>
+    </section>
+
+    <section id="resultView" class="view" aria-labelledby="resultTitle">
+      <div class="result-hero">
+        <div id="resultDial" class="result-dial"><span id="resultPercent"></span><small>richtig</small></div>
+        <p class="eyebrow">Runde beendet</p>
+        <h1 id="resultTitle"></h1>
+        <p id="resultCopy" class="lead"></p>
+      </div>
+      <div id="resultStats" class="result-stats"></div>
+      <div class="result-actions"><button id="againBtn" class="primary-btn" type="button">Noch einmal <span>↻</span></button><button class="secondary-btn" data-action="home" type="button">Startseite</button></div>
+      <section class="review"><h2>Fragen ansehen</h2><div id="reviewList"></div></section>
+    </section>
+  </main>
+
+  <dialog id="statsDialog">
+    <button class="dialog-close" type="button" aria-label="Schließen">×</button>
+    <p class="eyebrow">Lokale Statistik</p><h2>Deine Zeitreisen</h2>
+    <div id="lifetimeStats"></div>
+    <button id="resetStats" class="danger-link" type="button">Statistik zurücksetzen</button>
+  </dialog>
+
+  <footer><span>Privat. Lokal. Ohne Tracking.</span><button id="aboutBtn" type="button">Über dieses Quiz</button></footer>
+  <script src="questions.js"></script>
+  <script src="app.js"></script>
+  <script src="./cache-version.js"></script>
+  <script src="./pwa.js"></script>
+  <script src="update.js"></script>
+</body>
+</html>

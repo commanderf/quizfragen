@@ -101,7 +101,12 @@ jobs:
           print('Website-Dateien:',len([p for p in out.rglob('*') if p.is_file()]))
           PYBUILD
       - name: Qualitätsupdate für Issues 3, 4 und 5
-        run: python3 quality-update.py
+        run: |
+          if [ -d site ]; then
+            echo "site/ vorhanden – Qualitätsupdate (Archiv-Only) wird übersprungen"
+          else
+            python3 quality-update.py
+          fi
 
       - name: JavaScript prÃ¼fen
         shell: bash
