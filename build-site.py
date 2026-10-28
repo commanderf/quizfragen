@@ -55,8 +55,15 @@ PWA_JS = """(() => {
   addEventListener('online', () => networkStatus().catch(() => setStatus('Online')));
   addEventListener('offline', () => networkStatus().catch(() => setStatus('Offline')));
   function watchUpdate() {
+    if (registration.waiting) registration.waiting.postMessage({type: 'SKIP_WAITING'});
     if (registration.waiting && navigator.serviceWorker.controller) updateButton.hidden = false;
   }
+  let hadController = !!navigator.serviceWorker.controller;
+  navigator.serviceWorker.addEventListener('controllerchange', () => {
+    if (hadController) { location.reload(); return; }
+    hadController = true;
+    setStatus(navigator.onLine ? 'Offline bereit' : 'Offline · spielbereit');
+  });
   navigator.serviceWorker.register('./sw.js', {scope: './', updateViaCache: 'none'})
     .then(reg => {
       registration = reg; watchUpdate();
@@ -73,7 +80,14 @@ PWA_JS = """(() => {
       networkStatus().catch(() => {});
     })
     .catch(error => {
-      setStatus('Offline-Speicher nicht verfügbar'); console.warn('Service Worker:', error);
+      const msg = (error && (error.message || error.reason)) ? (error.message || error.reason) : String(error);
+      setStatus('Offline-Speicher nicht verfügbar: ' + msg);
+      console.warn('Service Worker:', error);
+      setTimeout(() => {
+        navigator.serviceWorker.register('./sw.js', {scope: './', updateViaCache: 'none'})
+          .then(() => networkStatus().catch(() => setStatus('Offline bereit')))
+          .catch(() => {});
+      }, 4000);
     });
 })();
 """
@@ -85,7 +99,7 @@ const CACHE = PREFIX + VERSION;
 const FILES = '__FILES__';
 const URLS = new Set(FILES.map(path => new URL(path, self.registration.scope).href));
 self.addEventListener('install', event => {
-  event.waitUntil(caches.open(CACHE).then(cache => cache.addAll(FILES.map(path => new Request(new URL(path, self.registration.scope), {cache: 'reload'})))));
+  event.waitUntil(caches.open(CACHE).then(cache => cache.addAll(FILES.map(path => new Request(new URL(path, self.registration.scope), {cache: 'reload'}))).then(() => self.skipWaiting())));
 });
 self.addEventListener('activate', event => {
   event.waitUntil((async () => {

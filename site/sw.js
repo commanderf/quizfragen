@@ -1,5 +1,5 @@
 'use strict';
-const VERSION = '93d4683e8655ff0a';
+const VERSION = '7b692ac215a27dd1';
 const PREFIX = 'zeitreise-' + encodeURIComponent(self.registration.scope) + '-';
 const CACHE = PREFIX + VERSION;
 const FILES = '["./", "./index.html", "./styles.css", "./app.js", "./questions.js", "./pwa.js", "./update.js", "./version.json", "./cache-version.js", "./manifest.webmanifest", "./icons/icon.svg", "./icons/icon-192.png", "./icons/icon-512.png", "./icons/apple-touch-icon.png"]';

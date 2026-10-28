@@ -72,6 +72,13 @@
       networkStatus().catch(() => {});
     })
     .catch(error => {
-      setStatus('Offline-Speicher nicht verfügbar'); console.warn('Service Worker:', error);
+      const msg = (error && (error.message || error.reason)) ? (error.message || error.reason) : String(error);
+      setStatus('Offline-Speicher nicht verfügbar: ' + msg);
+      console.warn('Service Worker:', error);
+      setTimeout(() => {
+        navigator.serviceWorker.register('./sw.js', {scope: './', updateViaCache: 'none'})
+          .then(() => networkStatus().catch(() => setStatus('Offline bereit')))
+          .catch(() => {});
+      }, 4000);
     });
 })();
