@@ -1,49 +1,28 @@
 # Zeitreise – Das Quiz
 
-Nostalgisches Multiple-Choice-Quiz mit Fragen aus den 70ern, 80ern, 90ern und 2000ern – auf Deutsch, ohne Anmeldung, ohne Tracking. Spielstand und Statistik bleiben lokal im Browser (localStorage).
+Nostalgisches Multiple-Choice-Quiz auf Deutsch mit Fragen aus vier Jahrzehnten: den 70ern, 80ern, 90ern und 2000ern. Ohne Anmeldung, ohne Tracking – Spielstand und Statistik bleiben nur in deinem Browser.
 
-## Im Browser spielen
+**Direkt spielen:** [commanderf.github.io/quizfragen](https://commanderf.github.io/quizfragen/)
 
-Die aktuelle Version läuft auf GitHub Pages:
+## So funktioniert das Quiz
 
-- **https://commanderf.github.io/quizfragen/** (falls das Repo umbenannt wird, ändert sich die URL entsprechend)
+Vor jeder Runde stellst du deine Zeitmaschine ein:
 
-Die Seite ist als PWA installierbar ("Als App installieren" links im Kopfbereich) und danach offline spielbar. Ein „Update laden"-Button bzw. ein orangefarbenes Update-Banner erscheint, wenn eine neuere Version verfügbar ist – dabei bleiben Spielstände und Statistik erhalten.
-
-## Runden anpassen
-
-Vor jeder Runde wählen:
-
-- **Jahrzehnt:** 70er, 80er, 90er, 00er oder alle zusammen
+- **Jahrzehnt:** 70er, 80er, 90er, 00er – oder alle zusammen in einer gemischten Runde
 - **Kategorien:** Musik, Film & Fernsehen, Alltag & Technik, Zeitgeschehen & Sport
-- **Anzahl:** 10–40 Fragen
-- **Schwierigkeit:** leicht / mittel / schwer
+- **Anzahl:** 10 bis 40 Fragen pro Runde
+- **Schwierigkeit:** leicht, mittel oder schwer
 
-Eine nicht beendete Runde wird automatisch zwischengespeichert – auf der Startseite lässt sie sich per „Fortsetzen" wieder öffnen.
+Jede Frage zeigt dir nach der Antwort eine kurze Erklärung und die Quelle – so hängst du nebenbei Wissen nach. Am Ende der Runde bekommst du eine Auswertung mit Zähler, Prozentwert und einer Rückschau auf alle Fragen.
 
-## Struktur
+Während der Spielzeit wird gezählt: Runden, beantwortete Fragen und Trefferquote – alles lokal im Browser gespeichert.
 
-- `app/` – Quellcode (Questions-Datenbank, App-Logik, Update-Banner)
-- `site/` – Für GitHub Pages gebaute Version (inkl. PWA: Service Worker, Manifest, Icons); wird mit `python3 build-site.py` aus `app/` neu erzeugt
-- `.github/workflows/deploy.yml` – Baut & published bei jedem Push auf `main` nach GitHub Pages
-- `quality-update.py` – Historischer Qualitäts-Patch (nur für den Legacy-Archiv-Build, wird bei vorhandenem `site/` übersprungen)
+## Besonderheiten
 
-## Neu bauen / Fragen ergänzen
+- **Nicht beendete Runden bleiben erhalten:** Wer mitten in einer Runde die Seite schließt oder versehentlich zurück zur Startseite klickt, kann später per „Fortsetzen" genau dort weiterspielen.
+- **Neue Versionen werden angezeigt:** Wenn es aktualisierte Fragen oder Inhalte gibt, erscheint oben ein Hinweis mit einem „Update installieren"-Button – Spielstände und Statistik bleiben davon unberührt.
+- **Kein Konto, keine Anmeldung:** Das Quiz läuft rein im Browser; nichts verlässt dein Gerät.
 
-1. Fragen in `app/questions.js` ergänzen (Schema siehe Datei: `id`, `decade`, `category`, `difficulty`, `question`, `answers`, `correct`, `explanation`, `source`)
-2. Version bumpen: Version in `app/update.js` **und** `app/version.json` anheben (löst das Update-Banner bei Nutzern aus)
-3. `python3 build-site.py` ausführen
-4. Committen und pushen – der Workflow deployed automatisch
+## Danksagung
 
-## Lokal testen
-
-```bash
-cd app
-python3 -m http.server 8000 --bind 0.0.0.0
-```
-
-Dann http://<host-ip>:8000/ öffnen (nicht localhost, wenn du von einem anderen Gerät testest).
-
----
-
-Basierend auf dem Original-Quiz „Zeitreise – Das 70er & 80er Quiz" (siehe `6751629b.tar`).
+Basierend auf dem Original-Quiz „Zeitreise – Das 70er & 80er Quiz" mit Fragen aus den 70ern und 80ern.
