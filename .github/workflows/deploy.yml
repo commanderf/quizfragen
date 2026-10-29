@@ -113,9 +113,7 @@ jobs:
         run: |
           node --check _site/app.js
           node --check _site/questions.js
-          node --check _site/pwa.js
-          node --check _site/sw.js
-          node --check _site/cache-version.js
+          node --check _site/update.js
       - name: Pages konfigurieren
         uses: actions/configure-pages@v5
       - name: Website bereitstellen
